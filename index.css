@@ -1,0 +1,173 @@
+body {
+    font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+    background-color:#fff;
+}
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    line-height: 1.6;
+    color: rgb(61, 64, 67);
+  }
+  
+  .main-container {
+    display: flex;
+    width: 100%;
+    margin: 1.1em auto 0;
+    max-width: 100% !important;
+    justify-content: space-between;
+  }
+  
+  .main-container > * {
+    padding: 20px 25px;
+  }
+  
+  .table-of-contents {
+    position: relative;
+    background-color: #fff;
+  }
+  
+  .table-of-contents p {
+    text-transform: uppercase;
+    letter-spacing: 0.125em;
+    font-size: 1em;
+  }
+  
+  .table-of-contents ul {
+    position: fixed;
+    /* Chrome (asshole) */
+    position: sticky;
+    /* Firefox */
+    margin-top: 2em;
+    top: 4em;
+  }
+  
+  h1:first-child {
+    margin-top: 0;
+  }
+  
+  .post-content {
+    margin:5%;
+    max-width: 90%;
+  }
+  
+  
+  /* TOC part */
+  
+  .table-of-contents svg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    bottom: auto;
+    display: none;
+    stroke: #4386fc;
+    transform: translateY(-50%);
+  }
+  
+  .toc-reading svg {
+    display: block;
+  }
+  
+  .table-of-contents ul {
+    width: 200px;
+    counter-reset: articles;
+    padding: 0;
+  }
+  
+  .table-of-contents li {
+    display: block;
+    counter-increment: articles;
+  }
+  
+  .table-of-contents li + li {
+    margin-top: 2em;
+  }
+  
+  .table-of-contents a {
+    display: block;
+    padding: 0 1.1em 0 3.2em;
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  a.toc-reading,
+  a.toc-already-read.toc-reading {
+    color:#4386fc;
+    opacity: 1;
+  }
+  
+  a.toc-already-read {
+    opacity: 0.4;
+  }
+  
+  .table-of-contents a:before {
+    content: counter(articles, decimal);
+    position: absolute;
+    bottom: auto;
+    left: 0;
+    top: 50%;
+    width: 36px;
+    height: 36px;
+    line-height: 34px;
+    text-align: center;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #d9d9d9 inset;
+    color: #4d4d4d;
+  }
+
+  
+  .heart {
+    font-size: 60px;
+    opacity: 0.1;
+  }
+  /* Three columns side by side */
+.column {
+    float: left;
+    width: 15%;
+    margin: 5%;
+    padding: 0 8px;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 800px) {
+    .column {
+      width: 40%;
+      display: block;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+  }
+  img{
+      border-radius: 100%;
+      box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+      margin: 4.5%;
+      width: 90% !important ;
+  }
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
