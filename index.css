@@ -2,16 +2,19 @@ html{
   height: 100%;
 }
 body {
-    font-family: Times New Roman, Cambria;
-    background-repeat: no-repeat;
+    font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    background-image: url("https://www.elev8solutions.com/wp-content/uploads/2014/10/Parallax-Background-Light-1_1-02.jpg");
+  background-position: 50% 0;
+  background-size: cover;
 
+    
 }
-.cool-gradient { background: -webkit-linear-gradient(360deg,#e9fbcf 10%,#1d7d8e 360%); background: linear-gradient(360deg,#e9fbcf 10%,#1d7d8e 360%); }
+
 
 * {
-    box-sizing: border-box;
-  }
-  
+ }
+      box-sizing: border-box;
+ 
   body {
     margin: 0;
     line-height: 1.6;
@@ -60,6 +63,7 @@ body {
     margin:5%;
     max-width: 80%;
     margin-bottom: 100px;
+    background-color: #fff: 
   }
   
   
