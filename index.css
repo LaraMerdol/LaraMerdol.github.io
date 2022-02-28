@@ -18,9 +18,19 @@ body::after {
   position: absolute;
   z-index: -1;   
 }
+}
+@media (min-width: 1200px){
+.container {
+    max-width: 100% !important;
+}  
+}
 
-
-* {
+@media (min-width: 992px)
+{
+  .container {
+    max-width: 100% !important;
+}
+  }* {
  }
       box-sizing: border-box;
  
@@ -184,9 +194,9 @@ body::after {
     background: none;
   }
   img{
-      border-radius: 100%;
       box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
       margin: 4.5%;
+      margin-top: 1%;
       width: 90% !important ;
   }
   /* Some left and right padding inside the container */
